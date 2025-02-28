@@ -63,10 +63,10 @@ const writeJson = () =>{
                 try{
                     const fileData = await fs.readFile(path,"utf-8");
                     if(JSON.parse(fileData).airport.length === 0){
-                        postSaveData("http://localhost:25039/airport");
+                        postSaveData("http://kkms4001.iptime.org:25039/airport");
                         // http://kkms4001.iptime.org:25039/airport
                     }else{
-                        saveData("http://localhost:25039/airport/0603");
+                        saveData("http://kkms4001.iptime.org:25039/airport/0603");
                         //http://kkms4001.iptime.org:25039/airport/0603
                     }
                 }catch(err){

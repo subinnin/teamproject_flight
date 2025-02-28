@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npx json-server --watch ./src/assets/jsons/airportPath.json --port 25039\" \"wait-on http://localhost:25039/airport && supervisor ./src/index.js\""
+    "start": "concurrently \"npx json-server --watch ./src/assets/jsons/airportPath.json --port 25039\" \"wait-on http://kkms4001.iptime.org:25039/airport && supervisor ./src/index.js\""
   },
   "dependencies": {
     "axios": "^1.7.9",

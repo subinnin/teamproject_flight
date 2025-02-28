@@ -1,0 +1,26 @@
+{
+  "name": "airport",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npx json-server --watch ./src/assets/jsons/airportPath.json --port 25039\" \"wait-on http://localhost:25039/airport && supervisor ./src/index.js\""
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "json-server": "^1.0.0-beta.3",
+    "mysql": "^2.18.1",
+    "supervisor": "^0.12.0",
+    "vim": "^0.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "wait-on": "^8.0.2"
+  }
+}
